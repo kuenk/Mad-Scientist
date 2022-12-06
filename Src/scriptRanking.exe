@@ -1,3 +1,0 @@
-#!/bin/bash
-. RankingMongo.py
-echo "ejecutado"
