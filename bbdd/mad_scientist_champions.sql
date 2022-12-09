@@ -23,10 +23,11 @@ DROP TABLE IF EXISTS `champions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `champions` (
-  `id` int DEFAULT NULL,
-  `name` text,
-  `tag1` text,
-  `tag2` text
+  `id` int NOT NULL,
+  `name` varchar(20) DEFAULT NULL,
+  `tag1` varchar(10) DEFAULT NULL,
+  `tag2` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-06 20:17:56
+-- Dump completed on 2022-12-09 10:57:51
