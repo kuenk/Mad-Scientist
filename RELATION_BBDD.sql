@@ -90,3 +90,16 @@ ADD CONSTRAINT `fk_events_item`
   REFERENCES `mad_scientist`.`items` (`id`)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
+
+
+
+
+ALTER TABLE `mad_scientist`.`frames` 
+ADD INDEX `fk_frames_participant_idx` (`participantid` ASC) VISIBLE;
+;
+ALTER TABLE `mad_scientist`.`frames` 
+ADD CONSTRAINT `fk_frames_participant`
+  FOREIGN KEY (`participantid`)
+  REFERENCES `mad_scientist`.`participant_summoner` (`participantId`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
