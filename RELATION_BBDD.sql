@@ -69,4 +69,24 @@ ADD CONSTRAINT `fk_info_champ`
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
 
-/*ADD UNIQUE INDEX `id_UNIQUE`
+
+ALTER TABLE `mad_scientist`.`participant_summoner` 
+ADD INDEX `fk_events_matches_idx` (`matchId` ASC) VISIBLE;
+;
+ALTER TABLE `mad_scientist`.`participant_summoner` 
+ADD CONSTRAINT `fk_events_matches`
+  FOREIGN KEY (`matchId`)
+  REFERENCES `mad_scientist`.`matches` (`matchId`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+ALTER TABLE `mad_scientist`.`events` 
+ADD INDEX `fk_events_item_idx` (`itemId` ASC) VISIBLE;
+;
+ALTER TABLE `mad_scientist`.`events` 
+ADD CONSTRAINT `fk_events_item`
+  FOREIGN KEY (`itemId`)
+  REFERENCES `mad_scientist`.`items` (`id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
