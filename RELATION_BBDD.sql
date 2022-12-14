@@ -103,3 +103,22 @@ ADD CONSTRAINT `fk_frames_participant`
   REFERENCES `mad_scientist`.`participant_summoner` (`participantId`)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
+
+
+
+ALTER TABLE `mad_scientist`.`events` 
+ADD CONSTRAINT `fk_events_participants`
+  FOREIGN KEY (`participantId`)
+  REFERENCES `mad_scientist`.`participant_summoner` (`participantId`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+
+
+ALTER TABLE `mad_scientist`.`fights` 
+ADD CONSTRAINT `fk_fights_summoner`
+  FOREIGN KEY (`participantId`)
+  REFERENCES `mad_scientist`.`participant_summoner` (`participantId`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
