@@ -24,7 +24,7 @@ Emplear todos los conceptos y herramientas posibles en el campo del análisis de
 
 
 ## 2 - EXTRACCIÓN, TRANSFORMACIÓN Y CARGA<a name="ETL"/>
-### Todos los datos son obtenidos via API. La fuente es oficial de la propia empresa.
+ Todos los datos son obtenidos via API. La fuente es RIOT.
 
 Para ello es necesario hacer varias llamadas consecutivas, usando los resultados de una como parametros de llamada en la siguiente.
 
