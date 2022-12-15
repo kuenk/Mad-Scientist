@@ -64,4 +64,4 @@ Dada la gran cantidad de variables que tenemos, cerca de 200, hemos ido eliminan
 
 
 ## 4 - ANALISIS MEDIANTE POWER BI <a name="AN"/>
-
+https://app.powerbi.com/groups/me/reports/ec649b74-1ba5-4ceb-a389-feb03d19cfc1/ReportSection8b191345a68da21b0d58
